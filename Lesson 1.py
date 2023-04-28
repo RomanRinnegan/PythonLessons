@@ -20,3 +20,19 @@ seconds %= 3600
 min = seconds//60
 seconds %= 60
 print(f'{hour:02}', ":", f'{min:02}', ":", f'{seconds:02}')
+
+# Задание 4
+
+proceeds = int(input("Введите сумму выручки:"))
+costs = int(input("Введите сумму расходов:"))
+if proceeds>costs:
+    workers = int(input("Укажите количесство сотрудников:"))
+    profit = proceeds-costs
+    profitability = round(profit/proceeds,2)
+    workers = round(profit/workers,2)
+    print("Финансовый результат: Прибыль.", "Ее величина:", profit)
+    print("Рентабильность выручки составила:", profitability)
+    print("Прибыль фирмы в расчете на одного сотрудника составила:", workers)
+else:
+    profit = proceeds - costs
+    print("Финансовый результат: Убыток.", "Его величина:", - profit)
