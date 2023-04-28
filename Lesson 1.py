@@ -20,3 +20,8 @@ seconds %= 3600
 min = seconds//60
 seconds %= 60
 print(f'{hour:02}', ":", f'{min:02}', ":", f'{seconds:02}')
+
+# Задание №3
+
+n = int(input("Введите целое число:"))
+print(str(n)+str(2*n)+str(3*n))
